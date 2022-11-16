@@ -6,10 +6,10 @@ from tkinter.constants import SUNKEN
 
 window = tk.Tk()
 window.title('Calculator-GeeksForGeeks')
-frame = tk.Frame(master=window, bg="skyblue", padx=10)
+frame = tk.Frame(master=window, bg="skyblue", padx=29)
 frame.pack()
-entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=3, width=30)
-entry.grid(row=0, column=0, columnspan=3, ipady=2, pady=2)
+entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=45, width=15)
+entry.grid(row=0, column=0, columnspan=2, ipady=1, pady=3)
 
 
 def myclick(number):
@@ -62,10 +62,10 @@ button_0.grid(row=4, column=1, pady=2)
 
 button_add = tk.Button(master=frame, text="+", padx=15,
 					pady=5, width=3, command=lambda: myclick('+'))
-button_add.grid(row=5, column=0, pady=2)
+button_add.grid(row=80, column=10, pady=15)
 
 button_subtract = tk.Button(
-	master=frame, text="-", padx=15, pady=5, width=3, command=lambda: myclick('-'))
+	master=frame, text="-", padx=25, pady=7, width=8, command=lambda: myclick('-'))
 button_subtract.grid(row=5, column=1, pady=2)
 
 button_multiply = tk.Button(
